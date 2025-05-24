@@ -17,10 +17,12 @@ public class Sqrt {
     }
 
     public double improve(double guess, double x) {
+        if (guess == 0) return 0;
         return average(guess, x / guess);
     }
 
     public double iter(double guess, double x) {
+        if (x == 0) return 0;
         if (good(guess, x))
             return guess;
         else
@@ -28,6 +30,7 @@ public class Sqrt {
     }
 
     public double calc() {
+        if (arg == 0) return 0;
         return iter(1.0, arg);
     }
 } 

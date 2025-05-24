@@ -69,7 +69,7 @@ public class SqrtTest {
     @Test
     public void testCalcWithSmallNumber() {
         Sqrt sqrt = new Sqrt(0.000001);
-        assertEquals(0.001, sqrt.calc(), DELTA);
+        assertEquals(0.001, sqrt.calc(), 0.000001);
     }
 
     @Test

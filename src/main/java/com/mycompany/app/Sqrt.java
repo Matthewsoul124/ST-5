@@ -18,7 +18,7 @@ public class Sqrt {
 
     public double improve(double guess, double x) {
         if (guess == 0) return 0;
-        return average(guess, x / guess);
+        return (guess + x / guess) / 2.0;
     }
 
     public double iter(double guess, double x) {
